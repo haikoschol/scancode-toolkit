@@ -47,12 +47,19 @@ Options:
     --ignore <pattern>  Ignore files matching <pattern>.
 
   post-scan:
-    --mark-source    Set the "is_source" flag to true for directories that contain
-                     over 90% of source files as direct children. Has no effect
-                     unless the --info scan is requested.
-    --only-findings  Only return files or directories with findings for the
-                     requested scans. Files and directories without findings are
-                     omitted (not considering basic file information as findings).
+    --ignore-copyright-holders <pattern>
+                                    Ignore findings with copyright holders
+                                    matching <pattern>.
+    --ignore-authors <pattern>      Ignore findings with authors matching
+                                    <pattern>.
+    --mark-source                   Set the "is_source" flag to true for
+                                    directories that contain over 90% of source
+                                    files as direct children. Has no effect unless
+                                    the --info scan is requested.
+    --only-findings                 Only return files or directories with findings
+                                    for the requested scans. Files and directories
+                                    without findings are omitted (not considering
+                                    basic file information as findings).
 
   misc:
     --reindex-licenses  Force a check and possible reindexing of the cached

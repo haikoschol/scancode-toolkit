@@ -224,6 +224,7 @@ setup(
         'scancode_post_scan': [
             'only-findings = scancode.plugin_only_findings:OnlyFindings',
             'mark-source = scancode.plugin_mark_source:MarkSource',
+            'ignore-copyrights = scancode.plugin_ignore_copyrights:IgnoreCopyrights',
         ],
 
         # scancode_pre_scan is an entry point to define pre_scan plugins.
